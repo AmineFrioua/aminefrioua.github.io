@@ -9,18 +9,20 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Japan, Kanagawa ken,</p>
+    <p>Yokohama Shi,</p>
+    <p>Shinishikawa 4-27-19</p>
 
-news: true  # includes a list of news items
-latest_posts: true  # includes a list of the newest posts
-selected_papers: true # includes a list of papers marked as "selected={true}"
+news: false  # includes a list of news items
+latest_posts: false  # includes a list of the newest posts
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I'm a software developer from :tunisia: with a background in mathematics and algorithms. I have a strong foundation in problem-solving and analytical thinking, which I apply to my work as a developer to create efficient and effective solutions for my clients and team members. In my free time, I enjoy staying up-to-date on the latest trends and techniques in the field, and I'm always looking for new opportunities to learn and grow as a developer.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+- 🔭 I’m currently working as a Software Developer in Japan, at IndustrialML
+- :bulb: I'm interested in all things data: **Big Data, Cloud, Machine Learning and Data Science**
+- 💬 Talk to me about fantasy books :magic_wand:, DND :game_die:, Anime, Games 🎮. 
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+
