@@ -1,9 +1,9 @@
 ---
 layout: post
-title: a post with table of contents on a sidebar
+title: Ruby on Rails is actually fun
 date: 2023-04-25 10:14:00-0400
-description: an example of a blog post with table of contents on a sidebar
-categories: sample-posts toc sidebar
+description: My time learning with Ruby on rails
+categories: development
 giscus_comments: true
 related_posts: false
 toc:

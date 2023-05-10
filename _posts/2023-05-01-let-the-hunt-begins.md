@@ -1,9 +1,9 @@
 ---
 layout: post
-title: displaying beatiful tables with Bootstrap Tables
+title: Job Hunting in japan
 date: 2023-03-20 14:37:00-0400
-description: an example of how to use Bootstrap Tables
-categories: sample-posts
+description: May the odds be in your favor
+categories: life
 giscus_comments: true
 related_posts: true
 datatable: true
