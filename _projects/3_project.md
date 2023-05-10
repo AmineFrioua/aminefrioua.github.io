@@ -118,19 +118,12 @@ test_inputs = [[175, 75, 27], [165, 60, 35], [185, 95, 42]]
 for inputs in test_inputs:
     prediction = network.predict(inputs)
     print("Prediction:", prediction)
-```
-{% endraw %}
 
-
-Certainly! Here's the continuation of the blog post:
-
-python
-Copy code
     hidden_outputs = self.sigmoid(hidden_inputs)
     
     final_inputs = np.dot(self.weights_hidden_output, hidden_outputs)
     final_outputs = self.sigmoid(final_inputs)
-    
+
     output_errors = targets - final_outputs
     hidden_errors = np.dot(self.weights_hidden_output.T, output_errors)
     
@@ -138,14 +131,17 @@ Copy code
                                                               np.transpose(hidden_outputs))
     self.weights_input_hidden += self.learning_rate * np.dot((hidden_errors * hidden_outputs * (1 - hidden_outputs)),
                                                              np.transpose(inputs))
+```
+{% endraw %}      
+
 In the train method, we start by converting the input and target values into NumPy arrays. We then perform forward propagation, computing the outputs of the hidden and output layers. We calculate the errors at each layer by comparing the target values with the actual outputs.
 
 Next, we update the weights and biases using backpropagation. We compute the gradient of the loss function with respect to the weights between the hidden and output layers, and between the input and hidden layers. Finally, we update the weights by multiplying the gradients with the learning rate and the corresponding layer outputs.
 
 To make predictions with our neural network, we'll define the predict method:
 
-python
-Copy code
+{% raw %}
+```py
 def predict(self, inputs_list):
     inputs = np.array(inputs_list, ndmin=2).T
     
@@ -156,13 +152,16 @@ def predict(self, inputs_list):
     final_outputs = self.sigmoid(final_inputs)
     
     return final_outputs
+```
+{% endraw %}   
+
 In the predict method, we perform forward propagation to compute the final outputs of the network based on the given input values. We return the final outputs as our predictions.
 
 Testing the Neural Network
 Now that we've defined our neural network class, let's test it on a simple problem. We'll create a neural network that can predict whether a given person is male or female based on their height, weight, and age.
 
-python
-Copy code
+{% raw %}
+```py
 # Create a neural network with 3 input nodes, 2 hidden nodes, and 1 output node
 network = NeuralNetwork(3, 2, 1, 0.1)
 
@@ -179,6 +178,9 @@ test_inputs = [[175, 75, 27], [165, 60, 35], [185, 95, 42]]
 for inputs in test_inputs:
     prediction = network.predict(inputs)
     print("Prediction:", prediction)
+```
+{% endraw %}   
+
 In this example, we train the network using a set of example inputs and targets. We iterate through the training data multiple times, updating the weights and biases after each iteration. After training, we test the network by making predictions on new inputs.
 
 ## Conclusion
@@ -188,7 +190,7 @@ now here is your cookie for reading this or scrolling down.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
