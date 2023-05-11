@@ -4,7 +4,7 @@ title: Updating dependencies
 date: 2022-12-10 11:59:00-0400
 description: Updating dependencies can be fun
 categories: development
-giscus_comments: true
+giscus_comments: false
 related_posts: false
 ---
 Updating dependencies in a big project can be a daunting task, especially if you have many dependencies and haven't updated them in a while. However, with the right mindset and approach, updating dependencies can actually be fun and rewarding.
